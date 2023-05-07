@@ -23,7 +23,7 @@ math:
 >
 > It is based on the original [LeaveIt Theme](https://github.com/liuzc/LeaveIt) and [KeepIt Theme](https://github.com/Fastbyte01/KeepIt).
 
-![Hugo Theme LoveIt](/images/Apple-Devices-Preview.png "Hugo Theme LoveIt")
+![Hugo Theme LoveIt](/assets/images/Apple-Devices-Preview.png "Hugo Theme LoveIt")
 
 ## Features
 

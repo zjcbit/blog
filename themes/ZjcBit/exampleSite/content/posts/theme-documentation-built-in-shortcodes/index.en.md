@@ -48,8 +48,9 @@ The rendered output looks like this:
 The HTML looks like this:
 
 ```html
+
 <figure>
-    <img src="/images/lighthouse.jpg"/>
+    <img src="/assets/images/lighthouse.jpg"/>
     <figcaption>
         <h4>Lighthouse (figure)</h4>
     </figcaption>

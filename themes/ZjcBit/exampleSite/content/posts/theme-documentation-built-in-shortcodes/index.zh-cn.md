@@ -49,8 +49,9 @@ Hugo 附带了一组预定义的 shortcodes, 它们实现了一些非常常见�
 输出的 HTML 看起来像这样:
 
 ```html
+
 <figure>
-    <img src="/images/lighthouse.jpg"/>
+    <img src="/assets/images/lighthouse.jpg"/>
     <figcaption>
         <h4>Lighthouse (figure)</h4>
     </figcaption>
