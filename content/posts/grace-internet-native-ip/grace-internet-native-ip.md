@@ -1,7 +1,9 @@
 ---
 title: "科学上网之加密梯子+原生IP"
 date: 2023-05-07T13:24:55+08:00
-draft: true
+draft: false
+tag: ["技术", "梯子", "原生IP"]
+categories: ["技术", "梯子", "原生IP"]
 ---
 ## 加密梯子+原生IP解决chatgpt封号问题
 
