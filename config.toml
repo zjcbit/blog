@@ -160,7 +160,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     author = true
     # site creation time
     # 网站创立年份
-    since = 2023
+    since = 2018
     # ICP info only in China (HTML format is supported)
     # ICP 备案信息，仅在中国使用 (支持 HTML 格式)
     icp = ""
@@ -630,7 +630,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # 网站验证代码，用于 Google/Bing/Yandex/Pinterest/Baidu
   [params.verification]
     google = "vvzqDU6iE4NvIs-AfO50HH5kEqhRuMNomLVNj5BgG-0"
-    bing = ""
+    bing = "8BC347D6106A426368609F23E36FB285"
     yandex = ""
     pinterest = ""
     baidu = "codeva-PA4AJLYMFv"
@@ -643,7 +643,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     image = "/images/Apple-Devices-Preview.png"
     # thumbnail URL
     # 缩略图 URL
-    thumbnailUrl = "/images/screenshot.png"
+    thumbnailUrl = "http://rucltvshi.hn-bkt.clouddn.com/logo.png"
 
   # Analytics config
   # 网站分析配置
