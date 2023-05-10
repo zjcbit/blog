@@ -633,7 +633,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     bing = ""
     yandex = ""
     pinterest = ""
-    baidu = ""
+    baidu = "codeva-PA4AJLYMFv"
 
   # Site SEO config
   # 网站 SEO 配置
