@@ -544,7 +544,7 @@
   # Site verification code for Google/Bing/Yandex/Pinterest/Baidu
   # 网站验证代码，用于 Google/Bing/Yandex/Pinterest/Baidu
   [params.verification]
-    google = ""
+    google = "google80929c95a6438afd.html"
     bing = ""
     yandex = ""
     pinterest = ""

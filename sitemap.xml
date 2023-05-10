@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://blog.zjcbit.com/</loc>
+  <lastmod>2023-05-10T14:35:57+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://blog.zjcbit.com/posts/</loc>
+  <lastmod>2023-05-10T14:35:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.zjcbit.com/tags/</loc>
+  <lastmod>2023-05-10T14:35:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.zjcbit.com/categories/</loc>
+  <lastmod>2023-05-10T14:35:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.zjcbit.com/categories/documentation/</loc>
+  <lastmod>2023-05-10T14:35:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.zjcbit.com/about/</loc>
+  <lastmod>2023-05-10T14:35:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.zjcbit.com/grace-internet-native-ip/</loc>
+  <lastmod>2023-05-10T14:35:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.zjcbit.com/categories/%E6%8A%80%E6%9C%AF/</loc>
+  <lastmod>2023-05-10T14:35:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.zjcbit.com/categories/%E6%A2%AF%E5%AD%90/</loc>
+  <lastmod>2023-05-10T14:35:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.zjcbit.com/categories/%E5%8E%9F%E7%94%9Fip/</loc>
+  <lastmod>2023-05-10T14:35:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
