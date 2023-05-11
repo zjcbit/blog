@@ -6,7 +6,7 @@
 
 扫描下面的二维码, 关注我的微信公众帐号。
 
-![qrcode](http://rucltvshi.hn-bkt.clouddn.com/k8s-qrcode.jpeg)
+<img src="http://rucltvshi.hn-bkt.clouddn.com/k8s-qrcode.jpeg" width = "200" height = "200" alt="图片名称" align=center />
 
 ## 目录
 
