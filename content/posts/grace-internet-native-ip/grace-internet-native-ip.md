@@ -5,6 +5,7 @@ draft: false
 tag: ["技术", "梯子", "原生IP"]
 categories: ["技术", "梯子", "原生IP"]
 ---
+![img](http://rucltvshi.hn-bkt.clouddn.com/n.jpeg)
 ## 加密梯子+原生IP解决chatgpt封号问题
 
 最近chatgpt账号很多都被封了，我之前申请的也被封了。上网看了一下原因可能有以下几个：
