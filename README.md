@@ -1,6 +1,6 @@
 # blog
 
-个人博客，地址：[https://www.blog.zjcbit.com](https://www.blog.zjcbit.com)
+个人博客，地址：[https://blog.zjcbit.com](https://blog.zjcbit.com)
 
 > 关注 AI、ChatGPT、Kubernetes、Python、Golang、云原生、个人成长与思考
 
