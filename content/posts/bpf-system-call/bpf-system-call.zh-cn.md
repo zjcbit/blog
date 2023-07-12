@@ -94,3 +94,30 @@ bpf(BPF_PROG_LOAD, {prog_type=BPF_PROG_TYPE_KPROBE,...prog_name="hello",...) = 6
 bpf(BPF_MAP_UPDATE_ELEM, ...}
 ...
 ```
+让我们来看下到底发生了什么，但我不会介绍每个系统调用，只会讲与ebpf交互相关的系统调用
+### 加载BTF数据
+首次调用bpf()看起来是这样的
+```
+bpf(BPF_BTF_LOAD, {btf="\237\353\1\0...}, 128) = 3
+```
+在这种情况下，您可以在输出中看到的命令是BPF_BTF_LOAD。这个只是众多内核源码中的一条。
+如果您使用的是相对较旧的Linux内核，则可能不会看到使用此命令的调用，因为它与BTF或BPF类型格式有关。BTF允许eBPF程序跨不同的内核版本移植，以便您可以在一台机器上编译程序并在另一台机器上使用它，而另一台机器可能使用不同的内核版本，因此具有不同的内核数据结构。我将在第5章中更详细地讨论这个问题。
+这次系统调用，将会加载部分btf字节码到内核，并将bpf()系统调用的程序在一个文件描述符中返回。
+**文件描述符是打开的文件（或类似文件的对象）的标识符。如果您打开一个文件（使用open()或openat()系统调用），则返回代码是一个文件描述符，然后作为参数传递给其他系统调用，如read()或write()。btf并不完全是一个文件，但它被赋予了一个文件描述符作为标识符，可用于引用它的进行操作。**
+* 如果你想查看完整的BPF命令集，它们记录在linux/bpf.h头文件中。
+* BTF是在5.1内核的上引入的，但它已经在一些Linux发行版上向后移植。
+### 创建Map
+bpf()系统调用是创建output perfbuffer的map：
+```
+bpf(BPF_MAP_CREATE, {map_type=BPF_MAP_TYPE_PERF_EVENT_ARRAY, , key_size=4,
+value_size=4, max_entries=4, ... map_name="output", ...}, 128) = 4
+```
+从中可以看到这个命令创建了一个名字为BPF_MAP_CREATE，类型为BPF_MAP_TYPE_PERF_EVENT_ARRAY类型的ebpf map，它的键和值都是4字节，最大条目数是4。kv实际上还有一些限制定在了max_entries: 本章后面会解释了为什么这里定义了4。最后面的4指的是文件描述符:将会通过output返回文件描述符给到用户空间。
+bpf()系统调用是创建config HasTable
+```
+bpf(BPF_MAP_CREATE, {map_type=BPF_MAP_TYPE_HASH, key_size=4, value_size=12,
+max_entries=10240... map_name="config", ...btf_fd=3,...}, 128) = 5
+```
+此Map定义为哈希表Table，其键长度为4个字节（对应于可用于保存用户ID的 32 位整数），值为12字节长（与结构体msg_t一致），最大条目数为10240(默认)。
+这个系统调用还返回了文件描述5，指向config map，用于后面的系统调用。
+此Map还有一个btf_fd=3，该字段指向我们在第一个bpf()系统调用中创建的BTF文件描述符。这是因为我们将使用BTF来定义Map中的键和值的类型。BTF信息描述了数据结构的布局，并且将其包含在映射的定义中意味着存在有关此映射中使用的键和值类型的布局的信息。
