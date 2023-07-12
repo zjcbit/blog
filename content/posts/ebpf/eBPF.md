@@ -3,7 +3,6 @@ title: "eBPF介绍"
 date: 2023-07-11T13:47:57+08:00
 draft: false
 tag: ["成长"]
-author: "左耳朵耗子"
 categories: ["ebpf"]
 ---
 
